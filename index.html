@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./index.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="todo-main">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <form id="todo-form">
+        <p>Add Task: </p>
+        <div class="form-control">
+          <input type="text" id="todo-input" placeholder="New Task">
+          <button type="submit">
+            <img src="./images/icons/add.png" alt="" style="width: 18px; height: 18px;">
+          </button>
+        </div>
+    </form>
+
+
+    <form id="edit-form" class="hide">
+      <p>Edit Task: </p>
+      <div class="form-control">
+        <input type="text" id="edit-input">
+        <button type="submit">
+          <img src="./images/icons/edit.svg" alt="" style="width: 18px; height: 18px;">
+        </button>
+      </div>
+      <button id="cancel-edit">Cancel</button>
+    </form>
+
+
+    <div id="toolbar">
+      <div id="search">
+        <h4>Search:</h4>
+        <form>
+          <input type="text" id="search-input" placeholder="Search">
+          <button id="erase-button">
+            <img src="./images/icons/delete.png" style="width: 18px; height: 18px;" alt="">
+          </button>
+        </form>
+      </div>
+      <div id="filter">
+        <h4>Filter:</h4>
+        <select id="filter-select">
+          <option value="all">All</option>
+          <option value="done">Done</option>
+          <option value="todo">Todo</option>
+        </select>
+      </div>
+    </div><!--toolbar-->  
+
+    <div id="todo-list">
+      <div class="todo done">
+        <h3>bla bla bla</h3>
+        <button class="finish-todo">
+          <img src="./images/icons/add.png" alt="" style="width: 18px; height: 18px;">
+        </button>
+        <button class="edit-todo">
+          <img src="./images/icons/edit.svg" alt="" style="width: 18px; height: 18px;">
+        </button>
+        <button class="delete-todo">
+          <img src="./images/icons/delete.png" style="width: 18px; height: 18px;" alt="">
+        </button>
+      </div>
+      <div class="todo">
+        <h3>Fazendo todo</h3>
+        <button class="finish-todo">
+          <img src="./images/icons/add.png" alt="" style="width: 18px; height: 18px;">
+        </button>
+        <button class="edit-todo">
+          <img src="./images/icons/edit.svg" alt="" style="width: 18px; height: 18px;">
+        </button>
+        <button class="delete-todo">
+          <img src="./images/icons/delete.png" style="width: 18px; height: 18px;" alt="">
+        </button>
+      </div>
+    </div>
+  </div><!--todo-->
+</body>
+</html>
